@@ -66,7 +66,7 @@
     </div>
     <div v-else class="empty-state"><h3>Aucun copieur inactif</h3></div>
 
-    <div v-else class="empty-state">
+    <div v-if="copieursActifs.length === 0 && copieursInactifs.length === 0" class="empty-state">
       <package-icon class="empty-icon" />
       <h2>Aucun copieur configuré</h2>
       <p>Créez votre premier produit pour commencer</p>
