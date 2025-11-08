@@ -1,0 +1,3 @@
+Vue CLI Configuration Loaded
+Output Directory: /home/jcadev/prestashop/modules/jca_copieurs/views
+Public Path: /modules/jca_copieurs/views

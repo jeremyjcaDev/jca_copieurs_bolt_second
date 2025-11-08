@@ -1,0 +1,28 @@
+.feedback-container {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 9999;
+  min-width: 220px;
+  max-width: 350px;
+  pointer-events: none;
+}
+.feedback-message {
+  padding: 14px 20px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  font-size: 15px;
+  pointer-events: all;
+}
+.feedback-message.success {
+  background: #43a047;
+}
+.feedback-message.error {
+  background: #e53935;
+}
+.feedback-message.info {
+  background: #1976d2;
+}
