@@ -390,18 +390,11 @@ export default Vue.extend({
     ...mapState(["currentCopieur"]),
 
     copieur() {
-      const realCopieur = this.currentCopieur?.Copieur;
+      return this.getDemoData();
+    },
 
-      if (!realCopieur || (!realCopieur.options?.length && !realCopieur.produits?.length)) {
-        return this.getDemoData();
-      }
-
-      return realCopieur || {
-        options: [],
-        produits: [],
-        configurations: [],
-        rules: [],
-      };
+    isDemoMode() {
+      return true;
     },
 
     currentConfiguration() {
